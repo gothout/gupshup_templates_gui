@@ -1,6 +1,4 @@
 # services/partner_service.py
-# aqui busca token de parceiro para utilizar para buscar token de serviço.abs
-
 import requests
 import time
 from models.partner import Partner
@@ -10,7 +8,7 @@ class PartnerService:
     def __init__(self, email, password):
         self.email = email
         self.password = password
-        self.partner = Partner()  # Instância de Partner para armazenar o token
+        self.partner = Partner() 
         self.token_expiry = None
 
     def authenticate(self):
